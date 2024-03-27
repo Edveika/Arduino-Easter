@@ -47,13 +47,17 @@ public:
 class Measure {
 private:
   UltraSound* sensors[2];
-  int i_active_sensor;
+  int i_start_sensor;
+  unsigned long start_time;
+  unsigned long end_time;
+  bool measuring;
   
 public:
   Measure() {}
   Measure(float cm_max_distance)
   {
-    i_active_sensor = -1;
+    i_start_sensor = 1;
+    measuring = false;
     sensors[0] = new UltraSound(10, 9, cm_max_distance);
     sensors[1] = new UltraSound(12, 11, cm_max_distance);
   }
@@ -74,11 +78,27 @@ public:
     for (int i = 0; i < 2; ++i)
       sensors[i]->run();
 
-    i_active_sensor = get_active_sensor();
-
-    if (i_active_sensor != -1)
+    int i_cur_active_sensor = get_active_sensor();
+    if (!measuring)
     {
-      Serial.println(i_active_sensor);
+      if (i_cur_active_sensor == i_start_sensor)
+      {
+        measuring = true;
+        start_time = millis();
+        Serial.print("Sensor: ");
+        Serial.println(i_start_sensor);
+      }
+    }
+    else 
+    {
+      if (i_cur_active_sensor != -1 && i_cur_active_sensor != i_start_sensor)
+      {
+        end_time = millis();
+        measuring = false;
+        unsigned long ellapsed = (end_time - start_time) / 1000;
+        Serial.print(ellapsed);
+        Serial.println(" seconds");
+      }
     }
   }
 };
