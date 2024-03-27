@@ -1,10 +1,11 @@
 class UltraSound {
- public:
+private:
   int trig_pin;  
   int echo_pin; 
   bool active;
   float max_distance;
 
+public:
   UltraSound() {}
   UltraSound(int trig_pin, int echo_pin, float max_distance)
   {
@@ -29,27 +30,72 @@ class UltraSound {
   float get_distance()
   {
     float duration = pulseIn(echo_pin, HIGH);  
-    float distance = (duration*0.0343) / 2; 
-
+    return (duration * 0.0343) / 2; 
+  }
+  void run()
+  {
+    play_sound();
+    float distance = get_distance();
     if (distance <= max_distance)
       active = true;
+    else
+      active = false;
+  }
+  bool get_active() { return active; }
+};
 
-    return distance;
+class Measure {
+private:
+  UltraSound* sensors[2];
+  int i_active_sensor;
+  
+public:
+  Measure() {}
+  Measure(float cm_max_distance)
+  {
+    i_active_sensor = -1;
+    sensors[0] = new UltraSound(10, 9, cm_max_distance);
+    sensors[1] = new UltraSound(12, 11, cm_max_distance);
+  }
+  ~Measure() { delete[] sensors; }
+
+  int get_active_sensor() 
+  {
+    for (int i = 0; i < 2; ++i)
+    {
+      if (sensors[i]->get_active())
+        return i;
+    }
+    
+    return -1;
+  }
+  void run() 
+  {
+    for (int i = 0; i < 2; ++i)
+      sensors[i]->run();
+
+    i_active_sensor = get_active_sensor();
+
+    if (i_active_sensor != -1)
+    {
+      Serial.println(i_active_sensor);
+    }
   }
 };
 
-float cm_max_distance = 5.0;
-UltraSound* sensors[2];
+float cm_max_distance = 30.0;
+Measure* measure;
 
 void setup() 
 {
   Serial.begin(9600);
-  sensors[0] = new UltraSound(10, 9, cm_max_distance);
+  measure = new Measure(cm_max_distance);
 }
 
 void loop() 
 {
-  sensors[0]->play_sound();
-  float dst = sensors[0]->get_distance();
-  Serial.println(dst);
+  measure->run();
+  //sensors[0]->play_sound();
+  //float dst = sensors[0]->get_distance();
+  //Serial.println(dst);
 }
