@@ -51,6 +51,7 @@ private:
   unsigned long start_time;
   unsigned long end_time;
   bool measuring;
+  float speed;
   
 public:
   Measure() {}
@@ -98,6 +99,9 @@ public:
         unsigned long ellapsed = (end_time - start_time) / 1000;
         Serial.print(ellapsed);
         Serial.println(" seconds");
+        float speed = 19 / ellapsed;
+        Serial.print(speed);
+        Serial.println(" cm/s");
       }
     }
   }
@@ -115,7 +119,4 @@ void setup()
 void loop() 
 {
   measure->run();
-  //sensors[0]->play_sound();
-  //float dst = sensors[0]->get_distance();
-  //Serial.println(dst);
 }
