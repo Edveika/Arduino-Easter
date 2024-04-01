@@ -59,10 +59,10 @@ public:
   {
     i_start_sensor = 1;
     measuring = false;
-    sensors[0] = new UltraSound(10, 9, cm_max_distance);
-    sensors[1] = new UltraSound(12, 11, cm_max_distance);
+    sensors[0] = new UltraSound(8, 7, cm_max_distance);
+    sensors[1] = new UltraSound(10, 9, cm_max_distance);
   }
-  ~Measure() { delete[] sensors; }
+  //~Measure() { delete[] sensors; }
 
   int get_active_sensor() 
   {
@@ -113,10 +113,16 @@ Measure* measure;
 void setup() 
 {
   Serial.begin(9600);
+  pinMode(11, OUTPUT);  
+  pinMode(12, OUTPUT); 
+  pinMode(13, OUTPUT); 
   measure = new Measure(cm_max_distance);
 }
 
 void loop() 
 {
+  digitalWrite(11, HIGH); 
+digitalWrite(12, HIGH); 
+digitalWrite(13, HIGH); 
   measure->run();
 }
