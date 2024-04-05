@@ -59,7 +59,7 @@ public:
   {
     play_sound();
     float distance = get_distance();
-    if (distance <= max_distance && distance != 0.0)
+    if (distance <= max_distance && distance > 0.0)
     {
       Serial.println(distance);
       active = true;      
@@ -152,7 +152,7 @@ public:
   }
 };
 
-float cm_max_distance = 10.0;
+float cm_max_distance = 50.0;
 Measure* measure;
 
 void setup() 
