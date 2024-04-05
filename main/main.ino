@@ -93,7 +93,6 @@ public:
     sensors[0] = new UltraSound(9, 8, cm_max_distance);
     sensors[1] = new UltraSound(12, 10, cm_max_distance);
     leds[I_LED_RED] = new LED(RED_LED);
-    //leds[I_LED_YELLOW] = new LED(YELLOW_LED);
     leds[I_LED_GREEN] = new LED(GREEN_LED);
   }
   //~RollRamp() { delete[] sensors; }
@@ -110,13 +109,14 @@ public:
   }
   void run() 
   {
-    for (int i = 0; i < 2; ++i)
-      sensors[i]->run();
+    //for (int i = 0; i < 2; ++i)
+      //sensors[i]->run();
 
-    int i_cur_active_sensor = get_active_sensor();
     
     if (!measuring)
     {
+      sensors[1]->run();
+      int i_cur_active_sensor = get_active_sensor();
       leds[I_LED_GREEN]->turn_on();
       if (i_cur_active_sensor == i_start_sensor)
       {
@@ -127,6 +127,8 @@ public:
     }
     else 
     {
+      sensors[0]->run();
+      int i_cur_active_sensor = get_active_sensor();
       if (i_cur_active_sensor != -1 && i_cur_active_sensor != i_start_sensor)
       {
         end_time = millis();
