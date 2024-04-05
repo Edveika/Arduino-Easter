@@ -43,6 +43,7 @@ public:
   ~UltraSound() {}
 
   void toggle() { active = !active; }
+  void set_active(bool state) { active = state; }
   void play_sound() 
   {
     digitalWrite(trig_pin, LOW);  
@@ -108,11 +109,7 @@ public:
     return -1;
   }
   void run() 
-  {
-    //for (int i = 0; i < 2; ++i)
-      //sensors[i]->run();
-
-    
+  {    
     if (!measuring)
     {
       sensors[1]->run();
@@ -142,6 +139,8 @@ public:
         writeNum(ellapsed, (3000 * 5));
         clearDisplay(1);
         leds[I_LED_RED]->turn_off();
+        sensors[0]->set_active(false);
+        sensors[1]->set_active(false);
       }
     }
   }
