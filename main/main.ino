@@ -14,12 +14,6 @@ public:
 
   void turn_on() { digitalWrite(led_pin, HIGH); }
   void turn_off() { digitalWrite(led_pin, LOW); }
-  void toggle(int ms_delay) 
-  {
-    turn_on();
-    delay(ms_delay);
-    turn_off();
-  }
 };
 
 class UltraSound {
@@ -40,10 +34,9 @@ public:
     this->max_distance = max_distance;
     active = false;
   }
-  ~UltraSound() {}
 
-  void toggle() { active = !active; }
   void set_active(bool state) { active = state; }
+  bool get_active() { return active; }
   void play_sound() 
   {
     digitalWrite(trig_pin, LOW);  
@@ -57,17 +50,12 @@ public:
     float duration = pulseIn(echo_pin, HIGH);  
     return (duration * 0.0343) / 2; 
   }
-  float tmp;
   void run()
   {
     play_sound();
     float distance = get_distance();
-    if (distance <= max_distance && distance > 0.0)
-      active = true;
-    else
-      active = false;
+    active = (distance <= max_distance && distance > 0.0);
   }
-  bool get_active() { return active; }
 };
 
 class RollRamp {
@@ -77,8 +65,7 @@ private:
   int i_start_sensor;
   unsigned long start_time;
   unsigned long end_time;
-  bool measuring;
-  float speed;
+  bool rolling_started;
   const int RED_LED = 12;
   const int GREEN_LED = 13;
   const int I_LED_RED = 0;
@@ -90,17 +77,21 @@ public:
   {
     exeSetup();
     i_start_sensor = 1;
-    measuring = false;
+    rolling_started = false;
     sensors[0] = new UltraSound(9, 8, cm_max_distance);
     sensors[1] = new UltraSound(12, 10, cm_max_distance);
     leds[I_LED_RED] = new LED(RED_LED);
     leds[I_LED_GREEN] = new LED(GREEN_LED);
   }
-  //~RollRamp() { delete[] sensors; }
+  ~RollRamp()
+  { 
+    delete[] sensors;
+    delete[] leds;
+  }
 
   int get_active_sensor() 
   {
-    for (int i = 0; i < 2; ++i)
+    for (int i = 0; i < sizeof(sensors) / sizeof(sensors[0]); ++i)
     {
       if (sensors[i]->get_active())
         return i;
@@ -110,32 +101,31 @@ public:
   }
   void run() 
   {    
-    if (!measuring)
+    if (!rolling_started)
     {
       sensors[1]->run();
-      int i_cur_active_sensor = get_active_sensor();
       leds[I_LED_GREEN]->turn_on();
-      if (i_cur_active_sensor == i_start_sensor)
+      if (get_active_sensor() == i_start_sensor)
       {
         leds[I_LED_GREEN]->turn_off();
-        measuring = true;
+        rolling_started = true;
         start_time = millis();
       }
     }
     else 
     {
       sensors[0]->run();
-      int i_cur_active_sensor = get_active_sensor();
-      if (i_cur_active_sensor != -1 && i_cur_active_sensor != i_start_sensor)
+      if (get_active_sensor() != (-1 || i_start_sensor))
       {
         end_time = millis();
-        measuring = false;
+        rolling_started = false;
         unsigned long ellapsed = (end_time - start_time) / 1000;
         Serial.print(ellapsed);
         Serial.print(",");
-        float speed = 19 / ellapsed;
+        float speed = 19.f / ellapsed;
         Serial.println(speed);
         leds[I_LED_RED]->turn_on();
+        // 3000 - 3000 cycles, same as 1 second. will show number for 5 seconds
         writeNum(ellapsed, (3000 * 5));
         clearDisplay(1);
         leds[I_LED_RED]->turn_off();
