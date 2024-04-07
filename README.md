@@ -61,7 +61,9 @@ git clone git@github.com:Edveika/Arduino-Easter.git
 
 2. Open main.ino in your Arduino IDE
 
-3. Click verify and upload
+3. Make sure you have Arduino UNO libraries installed
+
+4. Click verify and upload
 
 # 🤝 Credits
 
