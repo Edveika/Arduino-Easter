@@ -23,7 +23,7 @@ Once the bottom sensor is activated, the timer is stopped and the rolling time i
 
 ![1712524988220](https://github.com/Edveika/Arduino-Easter/assets/113787144/0e6825fe-e076-4f08-ae6f-87de31b0bab2)
 
-# ⚙️ Hardware
+# ⚙️ Hardware & Components
 
 * Arduino UNO
 * 2x UltraSound sensors
@@ -51,7 +51,7 @@ Once the bottom sensor is activated, the timer is stopped and the rolling time i
 * 4 digits screen that will show how much time it took the egg to roll
 * The sponge guarantees a smooth landing without breaking the egg
 
-# 💿 Installing
+# 💿 Installing the firmware
 
 1. Git clone this repo
 
