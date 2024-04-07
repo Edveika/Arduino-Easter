@@ -48,7 +48,7 @@ Once the bottom sensor is activated, the timer is stopped and the rolling time i
 * LEDs to indicare the state of the egg roller ramp
   * Green - you can roll the egg
   * Red - you cant roll the egg, wait for the green light
-* 4 digits screen that will show how much time it took the egg to roll
+* 4 digits screen that will show how much time it took the egg to roll to the bottom
 * The sponge guarantees a smooth landing without breaking the egg
 
 # 💿 Installing the firmware
