@@ -71,7 +71,7 @@ git clone git@github.com:Edveika/Arduino-Easter.git
 
 👨‍💻 [SteponasK](https://github.com/steponask) for [Serial reader](https://github.com/SteponasK/Arduino-To-Excel)
 
-👷🏻‍♂️ [ThePcCreator](https://github.com/ThePcCreator) for 4 digit display [library](https://github.com/ThePcCreator/Arduino-4-Digit-7-Segment-Display-Library)
+👷🏻‍♂️ [ThePcCreator](https://github.com/ThePcCreator) for 4 digit display [library and schematics](https://github.com/ThePcCreator/Arduino-4-Digit-7-Segment-Display-Library)
 
 # 📜 License
 
