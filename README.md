@@ -10,19 +10,21 @@ You can find a demonstration of this project on [YouTube](#)
 
 # 🛠️ How does it work?
 
-There are two sensors. One at the top of the ramp and the other at the bottom. 
+* There are two sensors. One at the top of the ramp and the other at the bottom. 
 
-![1712524988213](https://github.com/Edveika/Arduino-Easter/assets/113787144/8fcc798a-3500-41de-b353-63c340984c54)
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/06ea5abd-4462-4c3e-846a-ee27d5075d44" height="400px">
+</p>
 
-The top sensor is the start sensor that is waiting for an egg to move past it and once it does, the timer starts. Before activated, green LED is lit to indicate that the user can roll the egg.
+* The top sensor is the start sensor that is waiting for an egg to move past it and once it does, the timer starts. Before activated, green LED is lit to indicate that the user can roll the egg.
 
 ![1712524988200](https://github.com/Edveika/Arduino-Easter/assets/113787144/ff2b2d0c-404d-497f-970a-ea33cff59979)
 
-The bottom sensor can only be activated if the top sensor was activated first and the timer is started.
+* The bottom sensor can only be activated if the top sensor was activated first and the timer is started.
 
 ![1712524988207](https://github.com/Edveika/Arduino-Easter/assets/113787144/33df1098-82e9-4d4f-bf3a-c384c45560fe)
 
-Once the bottom sensor is activated, the timer is stopped and the rolling time is shown on the 4 digit screen.
+* Once the bottom sensor is activated, the timer is stopped and the rolling time is shown on the 4 digit screen.
 
 ![1712524988220](https://github.com/Edveika/Arduino-Easter/assets/113787144/0e6825fe-e076-4f08-ae6f-87de31b0bab2)
 
