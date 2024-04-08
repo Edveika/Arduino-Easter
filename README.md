@@ -89,7 +89,7 @@ git clone https://github.com/Edveika/Arduino-Easter.git
 
 4. Click verify and upload
 
-**OPTIONAL:** download the [serial reader](https://github.com/SteponasK/Arduino-To-Excel) made by [SteponasK](https://github.com/steponask) to save egg roll data on your machine.
+**OPTIONAL:** download the [serial reader](https://github.com/SteponasK/Arduino-To-Excel) made by [SteponasK](https://github.com/steponask) to save egg roll data on your machine
 
 # 🏗️ Engineering shenanagins <a name="engineering-shenanagins"></a>
 
@@ -111,7 +111,7 @@ git clone https://github.com/Edveika/Arduino-Easter.git
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/08038046-4847-41a3-bdd3-c01e96184246" height="400px">
 </p>
 
-* Single 5V pin - since there is only one 5V pin I had to connect the long cable's wire to it to get 5V to the 2nd BreadBoard
+* Single 5V pin - since there is only one 5V pin I had to connect the long cable's wire to it to get 5V to the 2nd BreadBoard.
 
 <p align="center">
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/cc403e8b-1ff5-4122-bfe7-7fae8c8567c6" height="400px">
