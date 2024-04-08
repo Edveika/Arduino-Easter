@@ -19,7 +19,7 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 * [🤝 Credits](#credits)
 * [📜 License](#license)
 
-# 🛠️ How does it work?
+# 🛠️ How does it work? <a name="how-does-it-work"></a>
 
 * There are two sensors. One at the top of the ramp and the other at the bottom. 
 
@@ -45,7 +45,7 @@ This is a physics lesson project that was assigned to me by my school. It's an e
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/0223c412-6b18-42b2-9838-5e149e6ff62a" height="400px">
 </p>
 
-# ⚙️ Hardware & Components
+# ⚙️ Hardware & Components <a name="hardware-components"></a>
 
 * Arduino UNO
 * 2x UltraSound sensors
@@ -59,9 +59,9 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 * Sponge
 * Egg roller ramp
 
-# 📐 Schematics
+# 📐 Schematics <a name="schematics"></a>
 
-# 🚀 Features
+# 🚀 Features <a name="features"></a>
 
 * Measure time it takes the egg to roll from one sensor to the other
 * Measure the speed of the egg(cm/s)
@@ -71,13 +71,10 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 * 4 digits screen that will show how much time it took the egg to roll to the bottom
 * The sponge guarantees a smooth landing without breaking the egg
 
-# 💿 Installing the firmware & Running
+# 💿 Installing & Running <a name="installing-the-firmware-running"></a>
 
 1. Git clone this repo
 
-```
-git clone https://github.com/Edveika/Arduino-Easter.git
-```
 
 2. Open main.ino in your Arduino IDE
 
@@ -87,7 +84,7 @@ git clone https://github.com/Edveika/Arduino-Easter.git
 
 **OPTIONAL:** download the [serial reader](https://github.com/SteponasK/Arduino-To-Excel) made by [SteponasK](https://github.com/steponask) to save egg roll data on your machine.
 
-# 🏗️ Engineering shenanagins
+# 🏗️ Engineering shenanagins <a name="engineering-shenanagins"></a>
 
 * The sponge - imagine you've dyed a beautiful Easter egg, investing a lot effort to achieve just the right look. You probably don't want it to break. The sponge offers a perfect solution by effectively preventing the eggs from cracking upon impact with the ramp's bottom.
 
@@ -113,14 +110,8 @@ git clone https://github.com/Edveika/Arduino-Easter.git
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/cc403e8b-1ff5-4122-bfe7-7fae8c8567c6" height="400px">
 </p>
 
-# 🤝 Credits
+# 🤝 Credits <a name="credits"></a>
 
 🏫 School for the hardware and the project idea
 
-👨‍💻 [SteponasK](https://github.com/steponask) for [Serial reader](https://github.com/SteponasK/Arduino-To-Excel)
-
-👷🏻‍♂️ [ThePcCreator](https://github.com/ThePcCreator) for 4 digit display [library and schematics](https://github.com/ThePcCreator/Arduino-4-Digit-7-Segment-Display-Library)
-
-# 📜 License
-
-This project is licensed under the GPL v2 [LICENSE](LICENSE).
+👨‍💻 [SteponasK](https://github.com/steponask) for [Serial reader](https://github.com/SteponasK/
