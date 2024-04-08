@@ -4,14 +4,15 @@
 
 # 🐣 Arduino-Easter
 
-This is a physics lesson project that was assigned to me by my school.
+This is a physics lesson project that was assigned to me by my school. Its a egg roll ramp that has Arduino UNO mounted on it with sensors and a screen that shows how long it took for the egg to roll to the bottom of the ramp. The goal of this project is not only to practice the skills gained from the physics class but to also entertain the students of my school.
+
+You can find a demonstration of this project on [YouTube](#)
 
 # 🛠️ How does it work?
 
 There are two sensors. One at the top of the ramp and the other at the bottom. 
 
 ![1712524988213](https://github.com/Edveika/Arduino-Easter/assets/113787144/8fcc798a-3500-41de-b353-63c340984c54)
-
 
 The top sensor is the start sensor that is waiting for an egg to move past it and once it does, the timer starts. Before activated, green LED is lit to indicate that the user can roll the egg.
 
