@@ -8,6 +8,17 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 
 **You can find a demonstration of this project on [YouTube](#)**
 
+# 📚 Content table
+
+* [🛠️ How it works](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-how-does-it-work)
+* [⚙️ Hardware & Components](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-hardware--components)
+* [📐 Schematics](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-schematics)
+* [🚀 Features](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-features)
+* [💿 Installing & Running](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-installing-the-firmware--running)
+* [🏗️ Engineering shenanagins](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-engineering-shenanagins)
+* [🤝 Credits](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-credits)
+* [📜 License](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-license)
+
 # 🛠️ How does it work?
 
 * There are two sensors. One at the top of the ramp and the other at the bottom. 
