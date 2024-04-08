@@ -13,20 +13,26 @@ This is a physics lesson project that was assigned to me by my school. Its a egg
 * There are two sensors. One at the top of the ramp and the other at the bottom. 
 
 <p align="center">
- <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/06ea5abd-4462-4c3e-846a-ee27d5075d44" height="400px">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/a94b1819-14a8-4b65-8f12-8679e16b59bd" height="400px">
 </p>
 
 * The top sensor is the start sensor that is waiting for an egg to move past it and once it does, the timer starts. Before activated, green LED is lit to indicate that the user can roll the egg.
 
-![1712524988200](https://github.com/Edveika/Arduino-Easter/assets/113787144/ff2b2d0c-404d-497f-970a-ea33cff59979)
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/bcb3535e-4478-44e6-bca3-79a83cd0b206" height="400px">
+</p>
 
 * The bottom sensor can only be activated if the top sensor was activated first and the timer is started.
 
-![1712524988207](https://github.com/Edveika/Arduino-Easter/assets/113787144/33df1098-82e9-4d4f-bf3a-c384c45560fe)
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/ac15de4e-5f5e-4f17-ba34-9f3d47669516" height="400px">
+</p>
 
 * Once the bottom sensor is activated, the timer is stopped and the rolling time is shown on the 4 digit screen.
 
-![1712524988220](https://github.com/Edveika/Arduino-Easter/assets/113787144/0e6825fe-e076-4f08-ae6f-87de31b0bab2)
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/0223c412-6b18-42b2-9838-5e149e6ff62a" height="400px">
+</p>
 
 # ⚙️ Hardware & Components
 
