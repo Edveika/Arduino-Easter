@@ -50,8 +50,6 @@ This is a physics lesson project that was assigned to me by my school. Its a egg
 
 # 📐 Schematics
 
-# 🏗️ Engineering shenanagins
-
 # 🚀 Features
 
 * Measure time it takes the egg to roll from one sensor to the other
@@ -62,7 +60,7 @@ This is a physics lesson project that was assigned to me by my school. Its a egg
 * 4 digits screen that will show how much time it took the egg to roll to the bottom
 * The sponge guarantees a smooth landing without breaking the egg
 
-# 💿 Installing the firmware
+# 💿 Installing the firmware & Running
 
 1. Git clone this repo
 
@@ -75,6 +73,34 @@ git clone git@github.com:Edveika/Arduino-Easter.git
 3. Make sure you have Arduino UNO libraries installed
 
 4. Click verify and upload
+
+**OPTIONAL:** download the [serial reader](https://github.com/SteponasK/Arduino-To-Excel) made by [SteponasK](https://github.com/steponask) to save egg roll data on your machine.
+
+# 🏗️ Engineering shenanagins
+
+* The sponge - imagine you've dyed a beautiful Easter egg, investing a lot effort to achieve just the right colors. You probably don't want it to break. The sponge offers a perfect solution by effectively preventing the eggs from cracking upon impact with the ramp's bottom.
+
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/54b15669-5048-4f19-9358-03fd9f2d7c74" height="400px">
+</p>
+
+* Long cables
+
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/3034aa3d-8291-4d30-aed2-92a5a19c298a" height="400px">
+</p>
+
+* Loose wires
+
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/08038046-4847-41a3-bdd3-c01e96184246" height="400px">
+</p>
+
+* Single 5V pin
+
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/cc403e8b-1ff5-4122-bfe7-7fae8c8567c6" height="400px">
+</p>
 
 # 🤝 Credits
 
