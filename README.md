@@ -65,7 +65,7 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 1. Git clone this repo
 
 ```
-git clone git@github.com:Edveika/Arduino-Easter.git
+git clone https://github.com/Edveika/Arduino-Easter.git
 ```
 
 2. Open main.ino in your Arduino IDE
