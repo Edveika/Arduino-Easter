@@ -4,7 +4,7 @@
 
 # 🐣 Arduino-Easter
 
-This is a physics lesson project that was assigned to me by my school. Its a egg roll ramp that has Arduino UNO mounted on it with sensors and a screen that shows how long it took for the egg to roll to the bottom of the ramp. The goal of this project is not only to practice the skills gained from the physics class but to also entertain the students of my school.
+This is a physics lesson project that was assigned to me by my school. It's an egg roll ramp that has Arduino UNO mounted on it with sensors that measure how long the egg has rolled from top to bottom and a screen that shows the results. The goal of this project is not only to practice the skills gained from the physics class but to also entertain the students of my school.
 
 **You can find a demonstration of this project on [YouTube](#)**
 
@@ -78,25 +78,25 @@ git clone git@github.com:Edveika/Arduino-Easter.git
 
 # 🏗️ Engineering shenanagins
 
-* The sponge - imagine you've dyed a beautiful Easter egg, investing a lot effort to achieve just the right colors. You probably don't want it to break. The sponge offers a perfect solution by effectively preventing the eggs from cracking upon impact with the ramp's bottom.
+* The sponge - imagine you've dyed a beautiful Easter egg, investing a lot effort to achieve just the right look. You probably don't want it to break. The sponge offers a perfect solution by effectively preventing the eggs from cracking upon impact with the ramp's bottom.
 
 <p align="center">
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/54b15669-5048-4f19-9358-03fd9f2d7c74" height="400px">
 </p>
 
-* Long cables
+* Long cables - the wires that come with the Arduino UNO are simply too short for a project like this. To solve this problem I decided to take a random wire, cut off the ends, expose the copper and connect the components with it. 
 
 <p align="center">
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/3034aa3d-8291-4d30-aed2-92a5a19c298a" height="400px">
 </p>
 
-* Loose wires
+* Loose wires - connecting components with loose wires can cause short circuit. To solve this problem I took the original wires that came with Arduino UNO, cut them in half and connected them with the wires that are inside the cable mentioned above using duct tape. This solved two problems: too short wires, short circuit.
 
 <p align="center">
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/08038046-4847-41a3-bdd3-c01e96184246" height="400px">
 </p>
 
-* Single 5V pin
+* Single 5V pin - since there is only one 5V pin I had to connect the long cable's wire to it to get 5V to the 2nd BreadBoard
 
 <p align="center">
  <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/cc403e8b-1ff5-4122-bfe7-7fae8c8567c6" height="400px">
