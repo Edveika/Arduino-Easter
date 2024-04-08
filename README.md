@@ -61,6 +61,10 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 
 # 📐 Schematics <a name="schematics"></a>
 
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/2efe9380-9f6d-499a-9813-339b2d135963">
+</p>
+
 # 🚀 Features <a name="features"></a>
 
 * Measure time it takes the egg to roll from one sensor to the other
