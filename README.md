@@ -75,6 +75,9 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 
 1. Git clone this repo
 
+```
+git clone https://github.com/Edveika/Arduino-Easter.git
+```
 
 2. Open main.ino in your Arduino IDE
 
@@ -114,4 +117,10 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 
 🏫 School for the hardware and the project idea
 
-👨‍💻 [SteponasK](https://github.com/steponask) for [Serial reader](https://github.com/SteponasK/
+👨‍💻 [SteponasK](https://github.com/steponask) for [Serial reader](https://github.com/SteponasK/Arduino-To-Excel)
+
+👷🏻‍♂️ [ThePcCreator](https://github.com/ThePcCreator) for 4 digit display [library and schematics](https://github.com/ThePcCreator/Arduino-4-Digit-7-Segment-Display-Library)
+
+# 📜 License <a name="license"></a>
+
+This project is licensed under the GPL v2 [LICENSE](LICENSE).
