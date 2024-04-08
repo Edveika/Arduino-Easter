@@ -10,14 +10,14 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 
 # 📚 Content table
 
-* [🛠️ How it works](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-how-does-it-work)
-* [⚙️ Hardware & Components](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-hardware--components)
-* [📐 Schematics](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-schematics)
-* [🚀 Features](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-features)
-* [💿 Installing & Running](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-installing-the-firmware--running)
-* [🏗️ Engineering shenanagins](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#%EF%B8%8F-engineering-shenanagins)
-* [🤝 Credits](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-credits)
-* [📜 License](https://github.com/Edveika/Arduino-Easter/edit/main/README.md#-license)
+* [🛠️ How it works](#how-does-it-work)
+* [⚙️ Hardware & Components](#hardware-components)
+* [📐 Schematics](#schematics)
+* [🚀 Features](#features)
+* [💿 Installing & Running](#installing-the-firmware-running)
+* [🏗️ Engineering shenanagins](#engineering-shenanagins)
+* [🤝 Credits](#credits)
+* [📜 License](#license)
 
 # 🛠️ How does it work?
 
