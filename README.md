@@ -6,7 +6,7 @@
 
 This is a physics lesson project that was assigned to me by my school. Its a egg roll ramp that has Arduino UNO mounted on it with sensors and a screen that shows how long it took for the egg to roll to the bottom of the ramp. The goal of this project is not only to practice the skills gained from the physics class but to also entertain the students of my school.
 
-You can find a demonstration of this project on [YouTube](#)
+**You can find a demonstration of this project on [YouTube](#)**
 
 # 🛠️ How does it work?
 
