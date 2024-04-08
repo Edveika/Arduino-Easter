@@ -1,4 +1,6 @@
-![1712524988232](https://github.com/Edveika/Arduino-Easter/assets/113787144/3f07722c-84c9-4180-aecf-91a4b7fc49fa)
+<p align="center">
+ <img src="https://github.com/Edveika/Arduino-Easter/assets/113787144/2d3fb8a2-249f-4e07-bc39-61ed8e855dde" height="400px">
+</p>
 
 # 🐣 Arduino-Easter
 
