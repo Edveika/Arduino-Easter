@@ -120,10 +120,10 @@ public:
       {
         end_time = millis();
         rolling_started = false;
-        unsigned long ellapsed = (end_time - start_time) / 1000;
+        unsigned long ellapsed = (end_time - start_time);
         Serial.print(ellapsed);
         Serial.print(",");
-        float speed = CM_RAMP_LENGTH / ellapsed;
+        float speed = CM_RAMP_LENGTH / (ellapsed / 1000.0f);
         Serial.println(speed);
         leds[I_LED_RED]->turn_on();
         // 3000 - 3000 cycles, same as 1 second. will show number for 5 seconds
