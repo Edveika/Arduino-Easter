@@ -83,7 +83,7 @@ This is a physics lesson project that was assigned to me by my school. It's an e
 git clone https://github.com/Edveika/Arduino-Easter.git
 ```
 
-2. Open main.ino in your Arduino IDE
+2. Open `main.ino` in your Arduino IDE
 
 3. Make sure you have Arduino UNO libraries installed
 
