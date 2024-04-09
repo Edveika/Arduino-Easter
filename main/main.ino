@@ -70,6 +70,7 @@ private:
   const int GREEN_LED = 13;
   const int I_LED_RED = 0;
   const int I_LED_GREEN = 1;
+  const float CM_RAMP_LENGTH = 76.5f;
   
 public:
   RollRamp() {}
@@ -122,7 +123,7 @@ public:
         unsigned long ellapsed = (end_time - start_time) / 1000;
         Serial.print(ellapsed);
         Serial.print(",");
-        float speed = 19.f / ellapsed;
+        float speed = CM_RAMP_LENGTH / ellapsed;
         Serial.println(speed);
         leds[I_LED_RED]->turn_on();
         // 3000 - 3000 cycles, same as 1 second. will show number for 5 seconds
@@ -136,7 +137,7 @@ public:
   }
 };
 
-float cm_max_distance = 5.0;
+float cm_max_distance = 10.0;
 RollRamp* roll_ramp;
 
 void setup() 
